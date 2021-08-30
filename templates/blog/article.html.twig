@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block content %}
+
+<div class="row mt-5">
+    <div class="col-md-12 my-auto">
+        <h3>{{article.nom}}</h3>
+        <hr>
+        <p>{{article.description}}</p>
+    </div>
+    {% for image in piecesjointes %}
+    <div class="col-md-4 mb-3">
+        <img class="img-fluid" src="{{ vich_uploader_asset(image, 'imageFile')}}" alt="image" height="150px"> 
+    </div>
+    {% endfor %}
+    
+</div>
+
+{# {{ dump(article.pieceJointes) }} #}
+{# {{ dump(field.value) }} #}
+
+
+{% endblock %}

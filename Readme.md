@@ -1,0 +1,1 @@
+Utilisation des plugins : VichUploader et js.datepicker
